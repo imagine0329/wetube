@@ -1,11 +1,11 @@
 doctype html
 html
     head
-        title | Wetube
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
+        title #{pageTitle} | #{siteName}
     body
         header
-            h1 WeTube
+            include ../partials/header
         main
             block content
-        footer
-            span &copy; WeTube
+        include ../partials/footer
